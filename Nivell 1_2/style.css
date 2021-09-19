@@ -1,0 +1,50 @@
+body {
+  background-color: #333;
+  color: #fff;
+}
+h1{
+  color: #fff;
+  opacity: 0.5;
+}
+#parrafo{
+  color: #fff;
+  opacity: 0.5;
+}
+
+.navbar {
+  border-bottom: #c0392b 3px solid;
+  opacity: .7;
+}
+
+#home-section {
+  background: url('./img/Joker-chistes-libreta.jpg') no-repeat;
+  min-height: 100vh;
+  
+  background-size: cover;
+  background-attachment: fixed;
+}
+#cabecera{
+margin-left: auto;
+}
+
+.dark-overlay {
+  background-color: rgba(0, 0, 0, .7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+}
+#box-joker{
+  opacity: 0.8;
+  margin-top: 150px;
+ 
+}
+.home-inner {
+  padding-top: 200px;
+}
+@media (max-width: 992px) {
+  .home-inner {
+    padding-top: 150px;
+  }
+}
