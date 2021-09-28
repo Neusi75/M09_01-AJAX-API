@@ -1,19 +1,24 @@
 
 
 $(document).ready(function () {
-    
+
+  
   const apiUrl = "http://api.icndb.com/jokes/random";
+  valores(); 
+
+  function valores(){
+    $.get((URL = apiUrl), function(data){
+    let dataValue = data.value;
+    let joke = dataValue.joke;
+    document.querySelector("#texto").innerHTML = joke;
+
+    });
+};
 
      $("#btnClick").click(function(element){
         element.preventDefault();
-        $.get((URL = apiUrl), function(data){
-            let dataValue = data.value;
-            let joke = dataValue.joke;
-            document.querySelector("#texto").innerHTML = joke;
-        }) ;
-        
-        
-        
+        valores();
+           
      });
 
     fetch(apiUrl,{
